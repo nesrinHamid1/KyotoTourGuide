@@ -30,12 +30,12 @@ public class historicalSiteFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.plases_list, container, false);
 
-        ArrayList<Places> places = new ArrayList<>();
+        ArrayList<Location> places = new ArrayList<>();
 
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.shinto));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.shinto));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.shinto));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.shinto));
+        places.add(new Location("Ginkakuji Temple","Ginkakuji (Silver Pavilion) is a Zen temple along Kyoto's eastern mountains (Higashiyama).","4.1/5",R.drawable.ginkakuji,R.drawable.shinto));
+        places.add(new Location("Kiyomizudera Temple","Kiyomizudera (literally \"Pure Water Temple\") is one of the most celebrated temples of Japan.","4.6/5",R.drawable.kiyomizudera_temple,R.drawable.shinto));
+        places.add(new Location("Daigoji Temple","Daigoji is an important temple of the Shingon sect of Japanese Buddhism and a designated world heritage site.","4/5",R.drawable.daigoji_temple,R.drawable.shinto));
+        places.add(new Location("Tofukuji Temple","Tofukuji (東福寺, Tōfukuji) is a large Zen temple in southeastern Kyoto that is particularly famous for its spectacular autumn colors. ","3.9/5",R.drawable.tofukuji_temple,R.drawable.shinto));
 
         PlacesAdapter placesAdapter = new  PlacesAdapter(Objects.requireNonNull(getActivity()),places);
 

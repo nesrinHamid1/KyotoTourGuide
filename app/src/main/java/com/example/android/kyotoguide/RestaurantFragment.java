@@ -28,12 +28,12 @@ public class RestaurantFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.plases_list, container, false);
 
-        ArrayList<Places> places = new ArrayList<>();
+        ArrayList<Location> places = new ArrayList<>();
 
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.rice));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.rice));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.rice));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.rice));
+        places.add(new Location("Kaiseki Ryori","Kaiseki ryori has its origin in the traditional tea ceremony, but later evolved into an elaborate dining style popular among aristocratic circles.","4.1/5",R.drawable.kaiseki_ryori,R.drawable.rice));
+        places.add(new Location("Shojin Ryori","Whereas kaiseki developed out of the affluence of the aristocrats, shojin ryori developed from the austerity of Buddhist monks.","3.6/5",R.drawable.shojin_ryori,R.drawable.rice));
+        places.add(new Location("Obanzai Ryori","Obanzai Ryori is the traditional home style cooking of Kyoto. It is made up of multiple small dishes that are usually quite simple to prepare.","4.9/5",R.drawable.obanzai_ryori,R.drawable.rice));
+        places.add(new Location("Kawayuka","Kawayuka, or Kawadoko as it is known outside of central Kyoto, is the summer pasttime of dining outdoors on temporary platforms built over flowing water. ","4.5/5",R.drawable.kawayuka,R.drawable.rice));
 
         PlacesAdapter placesAdapter = new  PlacesAdapter(Objects.requireNonNull(getActivity()),places);
 

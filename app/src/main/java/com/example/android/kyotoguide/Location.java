@@ -1,13 +1,13 @@
 package com.example.android.kyotoguide;
 
-public class Places {
+public class Location {
     private String mPlaceName;
     private String mPlaceDescription;
     private String mPlaceRating;
     private int mPlaceImage;
     private int mPlaceIcon;
 
-    public Places(String placeName, String placeDescription, String placeRating,int placeImage,int placeIcon ){
+    public Location(String placeName, String placeDescription, String placeRating, int placeImage, int placeIcon ){
         mPlaceName = placeName;
         mPlaceDescription = placeDescription;
         mPlaceRating = placeRating;

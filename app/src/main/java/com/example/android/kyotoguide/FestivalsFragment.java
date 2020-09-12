@@ -29,12 +29,12 @@ public class FestivalsFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.plases_list, container, false);
 
-        ArrayList<Places> places = new ArrayList<>();
+        ArrayList<Location> places = new ArrayList<>();
 
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.confetti));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.confetti));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.confetti));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.confetti));
+        places.add(new Location("Gion Matsuri","the festival of Yasaka Shrine, is the most famous festival in Japan. It takes place over the entire month of July.","4.3/5",R.drawable.gion_matsuri,R.drawable.confetti));
+        places.add(new Location("Hanatoro","\"flower and light road\", is a set of illumination events that take place in the Higashiyama District of Kyoto in March and the Arashiyama district of Kyoto in December.","4.1/5",R.drawable.hanatoro,R.drawable.confetti));
+        places.add(new Location("Aoi Matsuri","Aoi Matsuri takes place every May 15. The festival's main attraction is a large parade in Kyoto, in which over 500 people dressed in the aristocratic style of the Heian Period (794-1185) walk from the Imperial Palace to the Kamo Shrines.","3.9/5",R.drawable.aoi_matsuri,R.drawable.confetti));
+        places.add(new Location("Jidai Matsuri","The Jidai Matsuri is a festival that takes place every year on October 22, the anniversary of the foundation of Kyoto. It consists of a large parade that travels from the Imperial Palace to Heian Shrine","3.7/5",R.drawable.jidai_matsuri,R.drawable.confetti));
 
         PlacesAdapter placesAdapter = new  PlacesAdapter(Objects.requireNonNull(getActivity()),places);
 

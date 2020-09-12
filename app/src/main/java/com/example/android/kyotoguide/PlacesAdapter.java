@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class PlacesAdapter extends ArrayAdapter {
 
-    public PlacesAdapter( @NonNull Context context, ArrayList<Places> resource) {
+    public PlacesAdapter( @NonNull Context context, ArrayList<Location> resource) {
         super(context,0,resource);
     }
 
@@ -27,7 +27,7 @@ public class PlacesAdapter extends ArrayAdapter {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.item_list, parent, false);
 
         }
-        Places place = (Places) getItem(position);
+        Location place = (Location) getItem(position);
 
         ImageView imagePlace = (ImageView) listItemView.findViewById(R.id.place_image);
         imagePlace.setImageResource(place.getPlaceImage());
