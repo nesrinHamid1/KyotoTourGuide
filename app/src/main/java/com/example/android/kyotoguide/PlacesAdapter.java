@@ -11,9 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+
 public class PlacesAdapter extends ArrayAdapter {
 
-    public PlacesAdapter( @NonNull Context context, int resource) {
+    public PlacesAdapter( @NonNull Context context, ArrayList<Places> resource) {
         super(context,0,resource);
     }
 
