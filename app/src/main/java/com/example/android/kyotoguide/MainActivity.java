@@ -1,12 +1,9 @@
 package com.example.android.kyotoguide;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,18 +11,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ArrayList<Places> places = new ArrayList<>();
 
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.shinto));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.shinto));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.shinto));
-        places.add(new Places("the Name Place","this where the description gose","5/5",R.drawable.place_holder_image,R.drawable.shinto));
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        PlacesAdapter placesAdapter = new  PlacesAdapter(this,places);
+        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 4);
 
-        ListView listView =  findViewById(R.id.list_view);
-
-        listView.setAdapter(placesAdapter);
-
+        viewPager.setAdapter(pagerAdapter);
     }
 }
