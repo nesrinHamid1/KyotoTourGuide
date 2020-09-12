@@ -6,4 +6,40 @@
     <string name="place_image">place_image</string>
     <string name="place_icon">place icon</string>
 
+    <string name="Kaiseki_Ryori">Kaiseki Ryori</string>
+    <string name="Shojin_Ryori">Shojin Ryori</string>
+    <string name="Obanzai_Ryori">Obanzai Ryori</string>
+    <string name="Kawayuka">Kawayuka</string>
+    <string name="description_Kaiseki_Ryori">Kaiseki ryori has its origin in the traditional tea ceremony, but later evolved into an elaborate dining style popular among aristocratic circles.</string>
+    <string name="description_shojin_Ryori">Whereas kaiseki developed out of the affluence of the aristocrats, shojin ryori developed from the austerity of Buddhist monks.</string>
+    <string name="description_Obanzai_Ryori">Obanzai Ryori is the traditional home style cooking of Kyoto. It is made up of multiple small dishes that are usually quite simple to prepare.</string>
+    <string name="description_Kawayuka">\"Kawayuka, or Kawadoko as it is known outside of central Kyoto, is the summer pasttime of dining outdoors on temporary platforms built over flowing water. \"</string>
+
+    <string name="Sento_Imperial_Palace">Sento Imperial Palace</string>
+    <string name="Shugakuin_Imperial_Villa">Shugakuin Imperial Villa</string>
+    <string name="Toei_Uzumasa_Eigamura">Toei Uzumasa Eigamura</string>
+    <string name="Katsura_Imperial_Villa">Katsura Imperial Villa</string>
+    <string name="description_Sento_Imperial_Palace">Sento Imperial Palace is a secondary palace complex across from the Kyoto Imperial Palace in Kyoto Imperial Park.</string>
+    <string name="description_Shugakuin_Imperial_Villa">Shugakuin Imperial Villa was built in the 17th century by Emperor Gomizuno and is now managed by the Imperial Household Agency.</string>
+    <string name="description_Toei_Uzumasa_Eigamura">The Toei Uzumasa Eigamura (also known as Kyoto Studio Park or Movie Land.) is a film set and theme park in one.</string>
+    <string name="description_Katsura_Imperial_Villa">Katsura Imperial Villa is one of the finest examples of Japanese architecture and garden design.</string>
+
+    <string name="Ginkakuji_Temple">Ginkakuji Temple</string>
+    <string name="Kiyomizudera_Temple">Kiyomizudera Temple</string>
+    <string name="Daigoji_Temple">Daigoji Temple</string>
+    <string name="Tofukuji_Temple">Tofukuji Temple</string>
+    <string name="description_Ginkakuji_Temple">Ginkakuji (Silver Pavilion) is a Zen temple along Kyoto\'s eastern mountains (Higashiyama).</string>
+    <string name="description_Kiyomizudera_Temple">Kiyomizudera (literally \"Pure Water Temple\") is one of the most celebrated temples of Japan.</string>
+    <string name="description_Daigoji_Temple">Daigoji is an important temple of the Shingon sect of Japanese Buddhism and a designated world heritage site.</string>
+    <string name="description_Tofukuji_Temple">\"Tofukuji (東福寺, Tōfukuji) is a large Zen temple in southeastern Kyoto that is particularly famous for its spectacular autumn colors. \"</string>
+
+    <string name="Gion_Matsuri">Gion Matsuri</string>
+    <string name="Hanatoro">Hanatoro</string>
+    <string name="Aoi_Matsuri">Aoi Matsuri</string>
+    <string name="Jidai_Matsuri">Jidai Matsuri</string>
+    <string name="description_Gion_Matsuri">the festival of Yasaka Shrine, is the most famous festival in Japan. It takes place over the entire month of July.</string>
+    <string name="description_Hanatoro">\"flower and light road\", is a set of illumination events that take place in the Higashiyama District of Kyoto in March and the Arashiyama district of Kyoto in December.</string>
+    <string name="description_Aoi_Matsuri">Aoi Matsuri takes place every May 15. The festival\'s main attraction is a large parade in Kyoto, in which over 500 people dressed in the aristocratic style of the Heian Period (794-1185) walk from the Imperial Palace to the Kamo Shrines.</string>
+    <string name="description_Jidai_Matsuri">The Jidai Matsuri is a festival that takes place every year on October 22, the anniversary of the foundation of Kyoto. It consists of a large parade that travels from the Imperial Palace to Heian Shrine</string>
+
 </resources>

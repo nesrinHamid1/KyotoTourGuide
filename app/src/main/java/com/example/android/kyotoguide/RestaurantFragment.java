@@ -30,17 +30,16 @@ public class RestaurantFragment extends Fragment {
 
         ArrayList<Location> places = new ArrayList<>();
 
-        places.add(new Location("Kaiseki Ryori","Kaiseki ryori has its origin in the traditional tea ceremony, but later evolved into an elaborate dining style popular among aristocratic circles.","4.1/5",R.drawable.kaiseki_ryori,R.drawable.rice));
-        places.add(new Location("Shojin Ryori","Whereas kaiseki developed out of the affluence of the aristocrats, shojin ryori developed from the austerity of Buddhist monks.","3.6/5",R.drawable.shojin_ryori,R.drawable.rice));
-        places.add(new Location("Obanzai Ryori","Obanzai Ryori is the traditional home style cooking of Kyoto. It is made up of multiple small dishes that are usually quite simple to prepare.","4.9/5",R.drawable.obanzai_ryori,R.drawable.rice));
-        places.add(new Location("Kawayuka","Kawayuka, or Kawadoko as it is known outside of central Kyoto, is the summer pasttime of dining outdoors on temporary platforms built over flowing water. ","4.5/5",R.drawable.kawayuka,R.drawable.rice));
+        places.add(new Location(getString(R.string.Kaiseki_Ryori), getString(R.string.description_Kaiseki_Ryori), "4.1/5", R.drawable.kaiseki_ryori, R.drawable.rice));
+        places.add(new Location(getString(R.string.Shojin_Ryori), getString(R.string.description_shojin_Ryori), "3.6/5", R.drawable.shojin_ryori, R.drawable.rice));
+        places.add(new Location(getString(R.string.Obanzai_Ryori), getString(R.string.description_Obanzai_Ryori), "4.9/5", R.drawable.obanzai_ryori, R.drawable.rice));
+        places.add(new Location(getString(R.string.Kawayuka), getString(R.string.description_Kawayuka), "4.5/5", R.drawable.kawayuka, R.drawable.rice));
 
-        PlacesAdapter placesAdapter = new  PlacesAdapter(Objects.requireNonNull(getActivity()),places);
+        PlacesAdapter placesAdapter = new PlacesAdapter(Objects.requireNonNull(getActivity()), places);
 
-        ListView listView =  rootView.findViewById(R.id.list_view);
+        ListView listView =rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(placesAdapter);
-
 
         return rootView;
     }

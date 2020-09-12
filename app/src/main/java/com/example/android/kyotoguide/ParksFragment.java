@@ -29,17 +29,16 @@ public class ParksFragment extends Fragment {
 
         ArrayList<Location> places = new ArrayList<>();
 
-        places.add(new Location("Sento Imperial Palace","Sento Imperial Palace is a secondary palace complex across from the Kyoto Imperial Palace in Kyoto Imperial Park.","3.8/5",R.drawable.sento_imperial_palace,R.drawable.sakura));
-        places.add(new Location("Shugakuin Imperial Villa","Shugakuin Imperial Villa was built in the 17th century by Emperor Gomizuno and is now managed by the Imperial Household Agency.","4.2/5",R.drawable.shugakuin_imperial_villa,R.drawable.sakura));
-        places.add(new Location("Toei Uzumasa Eigamura","The Toei Uzumasa Eigamura (also known as Kyoto Studio Park or Movie Land.) is a film set and theme park in one.","3.6/5",R.drawable.toei_uzumasa_eigamura,R.drawable.sakura));
-        places.add(new Location("Katsura Imperial Villa","Katsura Imperial Villa is one of the finest examples of Japanese architecture and garden design.","4.1/5",R.drawable.katsura_imperial_villa,R.drawable.sakura));
+        places.add(new Location(getString(R.string.Sento_Imperial_Palace), getString(R.string.description_Sento_Imperial_Palace), "3.8/5", R.drawable.sento_imperial_palace, R.drawable.sakura));
+        places.add(new Location(getString(R.string.Shugakuin_Imperial_Villa), getString(R.string.description_Shugakuin_Imperial_Villa), "4.2/5", R.drawable.shugakuin_imperial_villa, R.drawable.sakura));
+        places.add(new Location(getString(R.string.Toei_Uzumasa_Eigamura), getString(R.string.description_Toei_Uzumasa_Eigamura), "3.6/5", R.drawable.toei_uzumasa_eigamura, R.drawable.sakura));
+        places.add(new Location(getString(R.string.Katsura_Imperial_Villa), getString(R.string.description_Katsura_Imperial_Villa), "4.1/5", R.drawable.katsura_imperial_villa, R.drawable.sakura));
 
-        PlacesAdapter placesAdapter = new  PlacesAdapter(Objects.requireNonNull(getActivity()),places);
+        PlacesAdapter placesAdapter = new PlacesAdapter(Objects.requireNonNull(getActivity()), places);
 
-        ListView listView =  rootView.findViewById(R.id.list_view);
+        ListView listView = rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(placesAdapter);
-
 
         return rootView;
     }

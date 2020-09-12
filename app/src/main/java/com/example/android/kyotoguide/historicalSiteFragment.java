@@ -32,10 +32,10 @@ public class historicalSiteFragment extends Fragment {
 
         ArrayList<Location> places = new ArrayList<>();
 
-        places.add(new Location("Ginkakuji Temple","Ginkakuji (Silver Pavilion) is a Zen temple along Kyoto's eastern mountains (Higashiyama).","4.1/5",R.drawable.ginkakuji,R.drawable.shinto));
-        places.add(new Location("Kiyomizudera Temple","Kiyomizudera (literally \"Pure Water Temple\") is one of the most celebrated temples of Japan.","4.6/5",R.drawable.kiyomizudera_temple,R.drawable.shinto));
-        places.add(new Location("Daigoji Temple","Daigoji is an important temple of the Shingon sect of Japanese Buddhism and a designated world heritage site.","4/5",R.drawable.daigoji_temple,R.drawable.shinto));
-        places.add(new Location("Tofukuji Temple","Tofukuji (東福寺, Tōfukuji) is a large Zen temple in southeastern Kyoto that is particularly famous for its spectacular autumn colors. ","3.9/5",R.drawable.tofukuji_temple,R.drawable.shinto));
+        places.add(new Location(getString(R.string.Ginkakuji_Temple),getString(R.string.description_Ginkakuji_Temple),"4.1/5",R.drawable.ginkakuji,R.drawable.shinto));
+        places.add(new Location(getString(R.string.Kiyomizudera_Temple),getString(R.string.description_Kiyomizudera_Temple),"4.6/5",R.drawable.kiyomizudera_temple,R.drawable.shinto));
+        places.add(new Location(getString(R.string.Daigoji_Temple),getString(R.string.description_Daigoji_Temple),"4/5",R.drawable.daigoji_temple,R.drawable.shinto));
+        places.add(new Location(getString(R.string.Tofukuji_Temple),getString(R.string.description_Tofukuji_Temple),"3.9/5",R.drawable.tofukuji_temple,R.drawable.shinto));
 
         PlacesAdapter placesAdapter = new  PlacesAdapter(Objects.requireNonNull(getActivity()),places);
 
